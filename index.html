@@ -1,82 +1,93 @@
+<!-- To complete this portion of the project, I used some of the information discussed in class, as well as looking at https://www.freecodecamp.org/news/semantic-html5-elements/ &  -->
+
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
+    <!-- I included the meta tags after livecoding with Dan Karcher & discussing different coding options, and then looking online at https://www.wordstream.com/meta-keyword -->
+    <meta name="copyright" content="&copy; 2019 Horiseon Social Solution Services, Inc.">
+    <meta name="keywords=" content="SEO, Search, search-engine-optimization, search engine, mobile devices, cell phone, searching, mobile app">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>HoriSEOn</title>
+    <!-- updated the title of the page -->
 </head>
 
 <body>
-    <div class="header">
+    <!-- changed from class to element -->
+    <header> 
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <aside>
+            <!-- ^included the aside tag to get the links to sit on the side of the Horiseon text. also switched names of links, added titles to each link when overing got the first link to work properly-->
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#SEO" title="Jump to Search Engine Optimization section">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#ORM" title="Jump to Online Reputation Management section">Online Reputation Management</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#SMM" title="Jump to Social Media Marketing section">Social Media Marketing</a>
                 </li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
-            <h2>Search Engine Optimization</h2>
+            </ul> 
+        </aside>
+        </header>
+
+    <object></object>
+
+    <br>
+    <br>
+    <!-- Changed each area here into an article, added the alt and title tags to the images and updated the ID for the h2 tag -->
+        <article>
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="image of web chart for search engine optimization" title="image of web chart for search engine optimization"/>
+            <h2 id="SEO">Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
-            <h2>Online Reputation Management</h2>
+        </article>
+
+        <article>
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="image of chart with increasing reputation" title="image of chart with increasing reputation"/>
+            <h2 id="ORM">Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
-            <h2>Social Media Marketing</h2>
+        </article>
+        <article>
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="image of friends gathering with their devices for social media purposes" title="image of friends gathering with their devices for social media purposes"/>
+            <h2 id="SMM">Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+        </article>
+    <!-- in this area, I labeled the entire box section, added alt and title tags to the images, and inserted breaks between each area to help break it up -->
+    <section>
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <img src="./assets/images/lead-generation.png" alt="image depicting new leads bringing in business" title="image depicting new leads bringing in business"/>
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </div>
-        <div class="benefit-brand">
+    <br>
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <img src="./assets/images/brand-awareness.png" alt="image depicting increasing visibility" title="image depicting increasing visibility"/>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </div>
-        <div class="benefit-cost">
+    <br>
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
+            <img src="./assets/images/cost-management.png" alt="image depicting costs" title="image depicting costs"/>
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
-    </div>
-    <div class="footer">
+        </section>
+        
+
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
 </body>
 
 </html>
