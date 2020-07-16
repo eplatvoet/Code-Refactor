@@ -1,5 +1,3 @@
-/* To complete this portion of the project, first, I looked at the HTML doc and wrote down the order of every code. I then copied the CSS codes into a seperate document so I could start cutting them out and pasting them in the order to follow along with the HTML codes. I checked off my list of HTML codes as I moved the CSS codes and updated the elements, until it was complete. I then pasted new order into the linked CSS document, and it is now more reader-friendly. I also removed some of the redundant coding, after declaring articles and sections. There was a lot of repititive code that had the same effects, so by eliminating the extra, and still getting the same effects, it's more reader-friendly. */
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,6 +16,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* removed the "." to convert from class to element */
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -27,6 +26,7 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
+/* changed from class to element */
 header aside {
     padding-top: 15px;
     margin-right: 20px;
@@ -49,6 +49,7 @@ a {
     text-decoration: none;
 }
 
+/* changed from class to element */
 object {
     height: 800px;
     width: 100%;
@@ -62,14 +63,11 @@ p {
     font-size: 16px;
 }
 
+/* changed from class to element, eliminated redundant codes, and simplied into one group */
 article {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
-
-
-article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -97,6 +95,7 @@ article img {
     margin-left: 25px;
 }
 
+/* changed from class to element, eliminated redundant codes, and simplied into one group */
 section {
     margin-right: 20px;
     margin-top: -640px;
@@ -107,9 +106,6 @@ section {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-section {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -125,6 +121,7 @@ section img {
     max-width: 150px;
 }
 
+/* changed from class to element */
 footer {
     padding: 30px;
     clear: both;
